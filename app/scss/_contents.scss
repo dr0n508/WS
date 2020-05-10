@@ -107,7 +107,9 @@
 .our-products {
   background-color: $bg;
   .header-page {
-    background: url("../img/our-products/our-product-header-bg.png") no-repeat 50% 50%;
+    background-position: 50% 50%;
+    background-image: url("../img/our-products/our-product-header-bg.png");
+    background-repeat: no-repeat;
   }
   .product-section {
     padding: 50px 0 70px;
@@ -170,7 +172,6 @@
     }
   }
 }
-
 
 .product-cart {
   padding: 20px 0 50px;
