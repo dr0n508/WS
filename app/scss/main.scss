@@ -1,0 +1,61 @@
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+img {
+	//max-width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+@import "fonts";
+@import "vars";
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: $default;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.45;
+	color: $text;
+}
+
+.animate  {
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+@import "lib/normalize";
+@import "lib/grid";
+
+@import "../js/slick/slick.css";
+@import "../js/slick/slick-theme.css";
+
+@import "_typography.scss";
+
+@import "elements/sliders";
+@import "elements/accordion";
+@import "elements/header-page";
+@import "elements/modal";
+@import "elements/breadcrumbs";
+@import "elements/inputs";
+@import "elements/video";
+@import "elements/image";
+@import "elements/stars";
+@import "elements/btns";
+
+
+@import "_header.scss";
+@import "_aside.scss";
+@import "_contents.scss";
+@import "_footer.scss";
+
+@import "media"; /* Always at the end*/

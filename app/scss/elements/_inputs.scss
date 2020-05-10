@@ -1,0 +1,78 @@
+//quantity-input
+.quantity-input {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  .quantity-arrow-minus,
+  .quantity-arrow-plus {
+    cursor: pointer;
+    background: none;
+    background: #F6F6F6;
+    border: none;
+    outline: none;
+    color: $text;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    font-family: $default;
+  }
+  .quantity-num {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    height: 25px;
+    width: 25px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-family: $default;
+
+    background: #F6F6F6;
+  }
+}
+
+//custom-select
+.custom-select {
+  margin-bottom: 20px;
+  border: 1px solid #C4C4C4;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 6.5px 0 6.5px;
+    border-color: black transparent transparent transparent;
+  }
+
+  select {
+    width: 100%;
+    background: none;
+    outline: none;
+    border-radius: 0;
+    border: none;
+    font-size: 16px;
+    font-family: $default;
+    line-height: 25px;
+    padding: 7px 10px;
+  }
+  select:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}

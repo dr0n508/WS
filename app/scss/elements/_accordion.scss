@@ -1,0 +1,39 @@
+.acc__card {
+  &:last-child .acc__title {
+    border-bottom: solid 2px #88C4C5;
+  }
+}
+.acc__title {
+  display: block;
+  padding: .75em 1em;
+  font-size: 18px;
+  font-weight: 500;
+  border-top: solid 2px #88C4C5;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    border-style: solid;
+    border-width: 6.5px 0 6.5px 8px;
+    border-color: transparent transparent transparent black;
+    transition: all 0.2s ease-in-out;
+  }
+  &.active::after {
+    transform: rotate(90deg);
+    transition: all 0.2s ease-in-out;
+  }
+}
+.acc__panel {
+  display: none;
+  margin: 0;
+  padding: .75em 1.5em;
+  text-align: left;
+}

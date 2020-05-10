@@ -1,0 +1,111 @@
+///////////////stars-block///////////////
+.stars-block.big {
+  .star {
+    width: 31px;
+    height: 29px;
+    background: url("../img/stars/star-transparent-gray.svg") no-repeat 50% 50%;
+    margin-right: 10px;
+  }
+}
+
+.stars-block {
+  margin-bottom: 20px;
+  .star {
+    width: 20px;
+    height: 17px;
+    display: inline-block;
+    background: url("../img/stars/star-transparent.svg") no-repeat 50% 50%;
+    background-size: cover;
+    margin-right: 5px;
+  }
+  .number-reviews {
+    margin-left: 15px;
+    margin-bottom: 0;
+    display: inline-block;
+    color: $text;
+    text-decoration: none;
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.stars-block.one{
+  .star:nth-child(1) {
+    background: url("../img/stars/star-white.svg") no-repeat 50% 50%;
+  }
+}
+
+.stars-block.big.one {
+  .star:nth-child(1) {
+    background: url("../img/stars/star-transparent-gray-2.svg") no-repeat 50% 50%;
+  }
+}
+
+.stars-block.two{
+  .star:nth-child(1),
+  .star:nth-child(2) {
+    background: url("../img/stars/star-white.svg") no-repeat 50% 50%;
+  }
+}
+
+.stars-block.big.two{
+  .star:nth-child(1),
+  .star:nth-child(2) {
+    background: url("../img/stars/star-transparent-gray-2.svg") no-repeat 50% 50%;
+  }
+}
+
+.stars-block.big.three {
+  .star:nth-child(1),
+  .star:nth-child(2),
+  .star:nth-child(3) {
+    background: url("../img/stars/star-transparent-gray-2.svg") no-repeat 50% 50%;
+  }
+}
+
+.stars-block.three{
+  .star:nth-child(1),
+  .star:nth-child(2),
+  .star:nth-child(3) {
+    background: url("../img/stars/star-white.svg") no-repeat 50% 50%;
+  }
+}
+
+.stars-block.big.four{
+  .star:nth-child(1),
+  .star:nth-child(2),
+  .star:nth-child(3),
+  .star:nth-child(4) {
+    background: url("../img/stars/star-transparent-gray-2.svg") no-repeat 50% 50%;
+  }
+}
+
+.stars-block.four{
+  .star:nth-child(1),
+  .star:nth-child(2),
+  .star:nth-child(3),
+  .star:nth-child(4) {
+    background: url("../img/stars/star-white.svg") no-repeat 50% 50%;
+  }
+}
+
+.stars-block.five.big {
+  .star:nth-child(1),
+  .star:nth-child(2),
+  .star:nth-child(3),
+  .star:nth-child(4),
+  .star:nth-child(5) {
+    background: url("../img/stars/star-transparent-gray-2.svg") no-repeat 50% 50%;
+  }
+}
+
+.stars-block.five{
+  .star:nth-child(1),
+  .star:nth-child(2),
+  .star:nth-child(3),
+  .star:nth-child(4),
+  .star:nth-child(5) {
+    background: url("../img/stars/star-white.svg") no-repeat 50% 50%;
+  }
+}
