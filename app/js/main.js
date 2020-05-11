@@ -17,14 +17,13 @@ $(document).on('click', function(e) {
 	e.stopPropagation();
 });
 
-$('.js-article-slider').slick({
+$('.js-article-slider, .js-last-updates-slider').slick({
 	dots: true,
 	infinite: true,
 	speed: 300,
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	arrows: true,
-
 	responsive: [
 		{
 			breakpoint: 9999,
@@ -41,6 +40,8 @@ $('.js-article-slider').slick({
 		}
 	]
 });
+
+
 
 $('.testimonial-slider').slick({
 	autoplay: true,

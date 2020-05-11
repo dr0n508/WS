@@ -70,8 +70,11 @@
   .article-item {
     cursor: pointer;
     margin-bottom: 50px;
-    .image-container img {
-      float: left;
+    .image-container {
+      padding-top: 72%;
+      img {
+        float: left;
+      }
     }
     &:hover {
       box-shadow: $shadow;
@@ -100,6 +103,14 @@
     h3 {
       margin-top: 30px;
     }
+  }
+}
+
+//giving-back
+.giving-back {
+  padding: 50px 0;
+  h2 {
+    margin-bottom: 25px;
   }
 }
 
