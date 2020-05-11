@@ -87,6 +87,7 @@
     }
     h3 {
       font-weight: 500;
+      padding-bottom: 20px;
     }
     p {
       color: #1C1C1C;
@@ -145,6 +146,7 @@
       text-decoration: none;
       color: black;
       background-color: white;
+      @extend .animate;
       &:hover {
         background-color: $accent;
         color: white;
@@ -186,13 +188,20 @@
         margin-right: auto;
         margin-bottom: 30px;
         width: 50%;
+        @media only screen and (max-width: 992px) {
+          width: 80%;
+        }
+        @media only screen and (max-width: 768px) {
+          width: 95%;
+        }
       }
     }
   }
 }
 
+///////////////product cart///////////////
 .product-cart {
-  padding: 20px 0 50px;
+  padding: 0 0 50px;
   h1 {
     font-size: 36px;
     line-height: 44px;
@@ -211,6 +220,7 @@
   }
   .wrapper-card {
     background-color: white;
+    margin-bottom: 20px;
     .block-text {
       padding: 20px;
       .title-block {
@@ -239,9 +249,15 @@
       }
     }
   }
+  .wrap-product-info {
+    margin-bottom: 20px;
+  }
+  .video {
+    margin-bottom: 20px;
+  }
 }
 
-///////////////product cart///////////////
+
 .product-item {
   margin-bottom: 20px;
   .wrap-product {
@@ -266,6 +282,11 @@
   &:hover {
     .block-text {
       background-color: $accent;
+    }
+    .image-container {
+      img {
+        transform: translate(-50%, -50%) scale(1.03);
+      }
     }
     h3, p {
       color: white;

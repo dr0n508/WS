@@ -9,6 +9,9 @@
   cursor: pointer;
   color: white;
   background: #88C4C5;
+  font-family: $default;
+  border: none;
+  outline: none;
   @extend.animate;
   &:hover {
     background: #1C1C1C;

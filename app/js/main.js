@@ -44,7 +44,7 @@ $('.js-article-slider, .js-last-updates-slider').slick({
 
 
 $('.testimonial-slider').slick({
-	autoplay: true,
+	autoplay: false,
 	dots: false,
 	infinite: true,
 	speed: 300,

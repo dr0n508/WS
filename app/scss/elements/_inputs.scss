@@ -25,6 +25,10 @@
     height: 25px;
     padding: 0;
     font-family: $default;
+    @extend .animate;
+    &:hover {
+      background: #dedede;
+    }
   }
   .quantity-num {
     padding: 0;
@@ -56,10 +60,13 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 8px 6.5px 0 6.5px;
+    border-width: 6px 5px 0 5px;
     border-color: black transparent transparent transparent;
   }
+  &:hover {
+    border: 1px solid black;
 
+  }
   select {
     width: 100%;
     background: none;
@@ -67,9 +74,13 @@
     border-radius: 0;
     border: none;
     font-size: 16px;
+    font-weight: 300;
     font-family: $default;
     line-height: 25px;
     padding: 7px 10px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   select:not([multiple]) {
     -webkit-appearance: none;

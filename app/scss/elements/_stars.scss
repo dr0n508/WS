@@ -24,6 +24,7 @@
     display: inline-block;
     color: $text;
     text-decoration: none;
+    @extend .animate;
     &:hover {
       color: $accent;
     }

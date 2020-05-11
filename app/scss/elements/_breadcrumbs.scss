@@ -1,6 +1,7 @@
 .breadcrumbs {
   padding: 20px 0;
   a, span {
+    @extend .animate;
     font-size: 18px;
     line-height: 22px;
     color: black;
@@ -15,5 +16,8 @@
   }
   .current {
     font-weight: 500;
+  }
+  a:hover {
+    color: $accent;
   }
 }
