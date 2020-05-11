@@ -2,11 +2,13 @@
   padding: 15px 0;
   background: #1C1C1C;
   color: white;
+  font-size: 14px;
   .container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
   .footer-nav {
+    margin-right: 10px;
     li {
       display: inline-block;
       float: left;
@@ -24,9 +26,31 @@
         }
       }
     }
-    span {
-      margin-left: 10px;
-    }
+  }
+  .copyright-brand {
+    flex-grow: 1;
+    text-align: right;
   }
 
+  @media only screen and (max-width: 768px) {
+    font-size: 13px;
+    .container {
+      flex-direction: column;
+      .footer-nav {
+        margin-bottom: 10px;
+        li {
+          a {
+            padding-right: 5px;
+            padding-left: 5px;
+            font-size: 13px;
+          }
+          &:last-child {
+            a {
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
