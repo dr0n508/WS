@@ -27,8 +27,6 @@
 
 }
 
-
-
 .read-more-btn, .back-btn {
   @extend.animate;
   display: inline-block;
@@ -69,7 +67,7 @@
 .back-btn {
   padding-left: 20px;
   &:after {
-    left: 0px;
+    left: 0;
     border-width: 5px 5px 5px 0;
     border-color: transparent #1c1c1c transparent transparent;
   }

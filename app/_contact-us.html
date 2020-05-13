@@ -27,7 +27,7 @@
 							<h3>Customer Service</h3>
 
 								<p><a href="tel:1-877-850-2968">123-456-7890</a></p>
-								<p><a href="memberservice@trivita.com">memberservice@trivita.com</a></p>
+								<p><a href="mailto:memberservice@trivita.com">memberservice@trivita.com</a></p>
 
 								<time>
 									<p>5:00 a.m. – 5:00 p.m. PST, Mon. – Fri.</p>
@@ -52,7 +52,8 @@
 							<p>John Sample</p>
 							<p><a href="tel:1-480-555-1212">1.480.555.1212</a></p>
 
-							<a href="#" class="btn btn-modal" data-modal="send-message">Send  a Message</a>
+							<a href="#" class="btn modal-trigger" data-modal="modal-send-message">Send  a Message</a>
+							<a href="#" class="btn modal-trigger" data-modal="modal-send-message-one">Send  a Message</a>
 
 						</div>
 
@@ -124,17 +125,20 @@
 		</div>
 	</section>
 
-	<!--modal-send-message-->
-	<div id="send-message" class="modal">
-		<div class="modal-content">
-			<h3 class="header-popup border-under">Send a Message</h3>
-			<a class="close-modal js-close-modal">&times;</a>
-			<div class="content-popup">
+	<!-- Modal Send Message -->
+	<div class="modal" id="modal-send-message">
+		<div class="modal-sandbox"></div>
+		<div class="modal-box">
+			<div class="modal-header">
+				<div class="close-modal js-close-modal">&times;</div>
+				<h1 class="border-under">Send a Message</h1>
+			</div>
+			<div class="modal-body">
+
 				<div class="addressee-block">
 					<p><span>To:</span> John Sample</p>
 					<p><span>From:</span></p>
 				</div>
-
 
 				<form action="#" class="form-modal">
 					<input type="text" name="name" placeholder="Name">
@@ -146,12 +150,9 @@
 						<button class="btn" type="submit">Submit</button>
 						<button class="btn-black js-close-modal">Cancel</button>
 					</div>
-
 				</form>
 			</div>
 		</div>
 	</div>
-	<!--modal-->
-
-
+	<!--  -->
 </main>
