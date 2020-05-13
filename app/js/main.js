@@ -120,20 +120,14 @@
 //menu convert 2 dropdown on mobile
 	$(function() {
 
-		// Create the dropdown base
 		$("<select name='filter_products'/>").appendTo(".custom-filter");
 
-		// Populate dropdown with menu items
-		$(".custom-filter a").each(function() {
+		$(".custom-filter button").each(function() {
 			var el = $(this);
 			$("<option />", {
-				"value"   : el.attr("href"),
+				"value"   : el.attr("value"),
 				"text"    : el.text()
 			}).appendTo(".custom-filter select");
-		});
-
-		$(".custom-filter select").change(function() {
-			window.location = $(this).find("option:selected").val();
 		});
 
 	});
