@@ -129,7 +129,7 @@
 }
 
 //page our products
-.our-products {
+.products-page {
   background-color: $bg;
   .header-page {
     background-image: url("../img/our-products/our-product-header-bg.jpg");
@@ -180,7 +180,7 @@
   }
 }
 
-.single-product {
+.single-product-page {
   background-color: $bg;
 }
 
@@ -333,6 +333,111 @@
       background-image: url("../img/blog/blog-page-header-bg-mobile.jpg");
     }
   }
+}
+
+//trivita-clinic-section
+
+.trivata-clinic-page {
+  @media only screen and (max-width: 768px) {
+    background-color: $bg;
+  }
+}
+
+.trivita-clinic-section {
+  padding: 60px 0;
+  img, p, ul, h2, h1, .btn {
+    margin-bottom: 20px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+//single article
+.footer-article {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .share-nav {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      margin-right: 20px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+    .share-fb a, .share-twitter a, .share-in a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 10px;
+      &:hover {
+        background-color: $accent;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 16px;
+        height: 16px;
+        display: block;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .share-fb a {
+      background-color: #3e5598;
+      &:before {
+        background-image: url("../img/social-icon/share-icons/fb-white.png");
+
+      }
+    }
+    .share-twitter a{
+      background-color: #5fa9ee;
+      &:before {
+        background-image: url("../img/social-icon/share-icons/twitter-white.png");
+      }
+    }
+    .share-in a {
+      background-color: #2074b6;
+      &:before {
+        background-image: url("../img/social-icon/share-icons/in-white.png");
+      }
+    }
+
+  }
+}
+
+
+//contact-us-page
+.contact-us-page {
+  background-color: $bg;
+  .header-page {
+    background-image: url("../img/contact-us-hero-bg.jpg");
+    @media only screen and (max-width: 450px) {
+      background-image: url("../img/contact-us-hero-bg-mobile.jpg");
+    }
+  }
+
 }
 
 

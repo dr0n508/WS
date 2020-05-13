@@ -9,43 +9,65 @@
   overflow: auto;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.4);
-  .close {
-    color: white;
+  .close-modal {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: $text;
     cursor: pointer;
+    font-size: 25px;
   }
 }
 
 .modal-content {
-  background-color: #fefefe;
+  position: relative;
+  background-color: white;
   margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
+  padding: 50px 120px;
   width: 80%;
-  max-width: 500px;
+  max-width: 600px;
   .header-popup {
-    background-color: #00aeef;
-    margin: -20px -20px 20px -20px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    .title-popup {
-      text-align: center;
-      margin: 0;
-      color: white;
-      font-size: 24px
-    }
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
   }
-  .content-popup {
-    p {
-      margin-bottom: 20px;
+  .addressee-block {
+    margin-bottom: 30px;
+    p span {
+      font-weight: 500;
     }
   }
   @media only screen and (max-width: 768px) {
     width: 90%;
-    .header-popup {
-      .title-popup {
-        font-size: 18px
+    padding: 30px 30px 50px 30px;
+  }
+  @media only screen and (max-width: 374px) {
+    padding: 20px 20px 30px 20px;
+  }
+}
+
+.form-modal {
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background-color: #EDEDED;
+    padding: 12px 20px;
+    font-family: $default;
+  }
+  textarea {
+    margin-bottom: 30px;
+  }
+  .wrap-btn {
+    display: flex;
+    button {
+      &:first-child {
+        margin-right: 5px;
+      }
+      &:last-child {
+        margin-left: 5px;
       }
     }
   }

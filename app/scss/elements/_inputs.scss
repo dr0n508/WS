@@ -47,43 +47,170 @@
 }
 
 //custom-select
-.custom-select {
-  margin-bottom: 20px;
-  border: 1px solid #C4C4C4;
-  position: relative;
-  &:after {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 6px 5px 0 5px;
-    border-color: black transparent transparent transparent;
-  }
-  &:hover {
-    border: 1px solid black;
+//.custom-select {
+//  margin-bottom: 20px;
+//  border: 1px solid #C4C4C4;
+//  position: relative;
+//  &:after {
+//    content: "";
+//    position: absolute;
+//    right: 10px;
+//    top: 50%;
+//    transform: translateY(-50%);
+//    width: 0;
+//    height: 0;
+//    border-style: solid;
+//    border-width: 6px 5px 0 5px;
+//    border-color: black transparent transparent transparent;
+//  }
+//  &:hover {
+//    border: 1px solid black;
+//
+//  }
+//  select {
+//    width: 100%;
+//    background: none;
+//    outline: none;
+//    border-radius: 0;
+//    border: none;
+//    font-size: 16px;
+//    font-weight: 300;
+//    font-family: $default;
+//    line-height: 25px;
+//    padding: 7px 10px;
+//    &:hover {
+//      cursor: pointer;
+//    }
+//  }
+//  select:not([multiple]) {
+//    -webkit-appearance: none;
+//    -moz-appearance: none;
+//  }
+//}
 
-  }
-  select {
-    width: 100%;
-    background: none;
-    outline: none;
-    border-radius: 0;
-    border: none;
-    font-size: 16px;
-    font-weight: 300;
-    font-family: $default;
-    line-height: 25px;
-    padding: 7px 10px;
-    &:hover {
-      cursor: pointer;
+.custom-filter {
+  ul {
+    li {
+      a {
+        display: inline-block;
+        background: #333;
+        color: white;
+        padding: 5px 15px;
+        text-decoration: none;
+      }
+      a.active {
+        background: $accent;
+        color: white;
+      }
+      a:hover {
+        background: $accent;
+        color: white;
+      }
     }
   }
-  select:not([multiple]) {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  select {
+    display: none;
+  }
+  @media (max-width: 992px) {
+    background: white;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 41px #F4F4F4;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 5px 0 5px;
+      border-color: black transparent transparent transparent;
+    }
+    ul {
+      display: none;
+    }
+    select {
+      display: inline-block;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: $default;
+      line-height: 25px;
+      padding: 7px 10px;
+      text-align: center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    :not([multiple]) {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+  }
+}
+
+//custome select
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: $default;
+  width: 100%;
+  margin-bottom: 30px;
+  select {
+    display: none; /*hide original SELECT element: */
+  }
+  .select-selected {
+    background-color: white;
+    /* Style the arrow inside the select element: */
+    &:after {
+      position: absolute;
+      content: "";
+      top: 17px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: $text transparent transparent transparent;
+    }
+  }
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent $text transparent;
+    top: 10px;
+  }
+  .select-items div {
+    color: $text;
+    padding: 8px 16px;
+    border-right: 1px solid #C4C4C4;
+    border-left: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    //border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  .select-selected {
+    color: $text;
+    padding: 8px 16px;
+    border: 1px solid #C4C4C4;
+    //border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  .select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
