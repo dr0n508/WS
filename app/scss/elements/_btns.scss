@@ -48,12 +48,7 @@
     height: 0;
     border-style: solid;
   }
-  &:hover {
-    color: $accent;
-    &:after {
-      border-color: transparent transparent transparent $accent;
-    }
-  }
+
 }
 
 .read-more-btn  {
@@ -61,6 +56,12 @@
     right: -10px;
     border-width: 5px 0 5px 5px;
     border-color: transparent transparent transparent #1c1c1c;
+  }
+  &:hover {
+    color: $accent;
+    &:after {
+      border-color: transparent transparent transparent $accent;
+    }
   }
 }
 
@@ -70,6 +71,12 @@
     left: 0;
     border-width: 5px 5px 5px 0;
     border-color: transparent #1c1c1c transparent transparent;
+  }
+  &:hover {
+    color: $accent;
+    &:after {
+      border-color: transparent $accent transparent transparent;
+    }
   }
 }
 
