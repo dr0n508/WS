@@ -35,6 +35,12 @@ body {
 	transition: all 0.2s ease;
 }
 
+.hide-mobile {
+	@media only screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
 @import "lib/grid"; //grid bootstrap4
 
 @import "../js/slick/slick.css";
