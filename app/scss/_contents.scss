@@ -52,29 +52,33 @@
   h2 {
     margin-bottom: 50px;
   }
-  .articles-list {
-
-  }
   .article-item {
-    cursor: pointer;
     margin-bottom: 50px;
-    .image-container {
-      padding-top: 72%;
-      img {
-        float: left;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .image-article {
+      width: 40%;
+      .image-container {
+        padding-top: 72%;
+        img {
+          float: left;
+        }
       }
     }
     .entry-article {
+      width: 60%;
       padding: 20px;
     }
     &:hover {
       box-shadow: $shadow;
     }
-    h3 {
-      padding-bottom: 20px;
-    }
   }
   @media only screen and (max-width: 992px) {
+    .article-item {
+      .image-article { width: 45%}
+      .entry-article { width: 55%}
+    }
     .article-item:hover {
       box-shadow: none;
     }
@@ -86,6 +90,8 @@
   }
   @media only screen and (max-width: 768px) {
     .article-item {
+      .image-article { width: 100%}
+      .entry-article { width: 100%}
       margin-bottom: 20px;
       .entry-article {
         padding: 20px 0;
@@ -100,7 +106,7 @@
     margin-top: -300px;
     margin-bottom: -100px;
     @media only screen and (max-width: 992px) {
-      margin-top: -150px;
+      margin-top: -100px;
       margin-bottom: 0;
     }
     @media only screen and (max-width: 768px) {
@@ -141,16 +147,8 @@
   }
 }
 
-.accent-bg {
-  background-color: $accent;
-  .read-more-btn {
-    color: white;
-    &:after {
-      border-color: transparent transparent transparent white;
-    }
-  }
-}
 
+//////////////////////single product page//////////////////////
 .single-product-page {
   background-color: $bg;
 }
