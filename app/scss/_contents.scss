@@ -1,3 +1,17 @@
+.home-page,
+.products-page,
+.single-product-page,
+.blog-page,
+.single-blog-page,
+.contact-us-page,
+.gift-card-page,
+.trivata-clinic-page,
+.giving-back-page,
+.privacy-policy-page,
+.terms-of-us-page {
+  background-color: $bg;
+}
+
 .accent-bg {
   background-color: $accent;
   .read-more-btn {
@@ -15,8 +29,6 @@
 }
 
 //////////////////////home-page//////////////////////
-
-
 //hero section
 .hero-section {
   padding: 440px 0 0;
@@ -51,27 +63,25 @@
 //intro-section
 .intro-section {
   padding: 50px 0;
+  background-color: white;
 }
 
 //top-products-section
 .top-products-section {
   padding: 50px 0;
-  background-color: $bg;
-  .wrap-btn {
-    margin-bottom: 50px;
-  }
 }
 
 //articles-section
 .articles-section {
-  background-color: white;
   padding: 50px 0;
+  background-color: white;
+
   .article-item {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    .image-article {
+    .article-image {
       width: 40%;
       .image-container {
         padding-top: 72%;
@@ -80,7 +90,7 @@
         }
       }
     }
-    .entry-article {
+    .article-entry {
       width: 60%;
       padding: 20px;
     }
@@ -90,8 +100,8 @@
   }
   @media only screen and (max-width: 992px) {
     .article-item {
-      .image-article { width: 45%}
-      .entry-article { width: 55%}
+      .article-image { width: 45%}
+      .article-entry { width: 55%}
     }
     .article-item:hover {
       box-shadow: none;
@@ -104,10 +114,10 @@
   }
   @media only screen and (max-width: 768px) {
     .article-item {
-      .image-article { width: 100%}
-      .entry-article { width: 100%}
+      .article-image { width: 100%}
+      .article-entry { width: 100%}
       margin-bottom: 20px;
-      .entry-article {
+      .article-entry {
         padding: 20px 0;
       }
     }
@@ -146,16 +156,7 @@
 }
 
 //////////////////////page our products//////////////////////
-.product-list {
-  margin-bottom: 30px;
-  div[class^="col"] {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-}
-
 .products-page {
-  background-color: $bg;
   .header-page {
     background-image: url("../img/our-products/our-product-header-bg.jpg");
   }
@@ -170,51 +171,65 @@
   }
 }
 
-
-//////////////////////single product page//////////////////////
-.single-product-page {
-  background-color: $bg;
+//product-list home page and products-page
+.product-list {
+  margin-bottom: 30px;
+  div[class^="col"] {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
-//testimonials-section
-.testimonials-section {
-  padding: 40px 0 20px;
-  .list-testimonials {
-    .item {
-      p {
-        font-family: $playfair;
-        font-size: 20px;
-        color: white;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        width: 50%;
-        @media only screen and (max-width: 992px) {
-          width: 80%;
-        }
-        @media only screen and (max-width: 768px) {
-          width: 95%;
-        }
+.product-card {
+  margin-bottom: 20px;
+  .wrap-product {
+    @extend.animate;
+    text-decoration: none;
+    display: block;
+  }
+  .block-text {
+    padding: 15px 20px;
+    background-color: white;
+    @extend.animate;
+    p { margin-bottom: 0; }
+  }
+  .detail-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .price { margin-bottom: 0; }
+  }
+}
+
+.product-card.top-product {
+  &:hover {
+    .block-text { background-color: $accent; }
+    .image-container {
+      img {
+        transform: translate(-50%, -50%) scale(1.03);
+      }
+    }
+    .product-name, p {
+      color: white;
+      &:after {
+        background: white;
       }
     }
   }
 }
 
+//////////////////////single product page//////////////////////
 //product card
 .product-characteristics {
   padding: 0 0 50px;
-  h1 {
+  .product-title {
     font-size: 36px;
     line-height: 44px;
     margin-bottom: 20px;
   }
   .stars-block {
     padding-bottom: 30px;
-  }
-  h3 {
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 500;
   }
   .product-actions {
     background-color: white;
@@ -249,6 +264,11 @@
   }
   .product-info {
     margin-bottom: 20px;
+    h3 {
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 500;
+    }
   }
   .video {
     margin-bottom: 20px;
@@ -274,56 +294,28 @@
   }
 }
 
-//lists-products
-.product-card {
-  margin-bottom: 20px;
-  .wrap-product {
-    @extend.animate;
-    text-decoration: none;
-    display: block;
-  }
-  .block-text {
-    padding: 15px 20px;
-    background-color: white;
-    @extend.animate;
-    p {
-      margin-bottom: 0;
-    }
-  }
-  .detail-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    .price {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.product-card.top-product {
-  &:hover {
-    .block-text {
-      background-color: $accent;
-    }
-    .image-container {
-      img {
-        transform: translate(-50%, -50%) scale(1.03);
-      }
-    }
-    .product-name, p {
-      color: white;
-      &:after {
-        background: white;
+//testimonials-section
+.testimonials-section {
+  padding: 40px 0 20px;
+  .list-testimonials {
+    .testimonial-item {
+      .testimonial-text {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 50%;
+        font-family: $playfair;
+        font-size: 20px;
+        color: white;
+        @media only screen and (max-width: 992px) { width: 80%; }
+        @media only screen and (max-width: 768px) { width: 95%; }
       }
     }
   }
 }
-
 
 ////////////////////////blog-page//////////////////////
 .blog-page {
-  background: $bg;
   .header-page {
     background-image: url("../img/blog/blog-page-header-bg.jpg");
   }
@@ -335,7 +327,7 @@
     .article-item {
       background: white;
       @media only screen and (max-width: 768px) {
-        .entry-article {
+        .article-entry {
           padding-right: 20px;
           padding-left: 20px;
         }
@@ -350,45 +342,38 @@
 }
 
 ////////////////////////trivita-clinic-section
-
 .trivata-clinic-page {
-  h1 {
-    font-size: 36px;
-  }
-  @media only screen and (max-width: 768px) {
-    background-color: $bg;
-    .aside {
-      background: white;
-      .widget {
-        padding-right: 0;
-        padding-left: 0;
-      }
+  .trivita-clinic-section {
+    padding: 60px 0;
+    .title-page {
+      font-size: 36px;
+    }
+    .image-page, .title-page, .list, .btn {
+      margin-bottom: 20px;
+    }
+    .image-page {
+      width: 100%;
+      height: auto;
+    }
+    @media only screen and (max-width: 768px) {
+      padding-bottom: 0;
     }
   }
-}
-
-.trivita-clinic-section {
-  padding: 60px 0;
-  img, p, ul, h2, h1, .btn {
-    margin-bottom: 20px;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
   @media only screen and (max-width: 768px) {
-    padding-bottom: 0;
+    .aside {
+      background: white;
+    }
   }
 }
 
 ////////////////////////single-blog-page
 .single-blog-page {
-  background: $bg;
-  .wrapper-article {
-    .title-article {
+  .article-wrapper {
+    margin-bottom: 50px;
+    .article-title {
       font-size: 36px;
     }
-    .image-article {
+    .article-image {
       margin-bottom: 20px;
       width: 100%;
       height: auto;
@@ -401,18 +386,14 @@
         margin-bottom: 0;
       }
     }
-    article {
-      margin-bottom: 50px;
-    }
   }
 }
 
-.footer-article {
+.article-footer {
   padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   .share-nav {
     display: flex;
     align-items: center;
@@ -464,7 +445,6 @@
       background-color: #3e5598;
       &:before {
         background-image: url("../img/social-icon/share-icons/fb-white.png");
-
       }
     }
     .share-twitter a{
@@ -479,14 +459,11 @@
         background-image: url("../img/social-icon/share-icons/in-white.png");
       }
     }
-
   }
 }
 
-
 ////////////////////////contact-us-page
 .contact-us-page {
-  background-color: $bg;
   .header-page {
     background-image: url("../img/contact-us-hero-bg.jpg");
     @media only screen and (max-width: 450px) {
@@ -516,6 +493,14 @@
           margin-bottom: 0;
         }
       }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .aside {
+      background: white;
+    }
+    .contact-us-section {
+      padding-bottom: 0;
     }
   }
 }

@@ -99,15 +99,15 @@
 
 //accordion
 	$(function() {
-		$('.acc__title').click(function(j) {
+		$('.acc-title').click(function(j) {
 
-			var dropDown = $(this).closest('.acc__card').find('.acc__panel');
-			$(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();
+			var dropDown = $(this).closest('.acc-card').find('.acc-panel');
+			$(this).closest('.acc').find('.acc-panel').not(dropDown).slideUp();
 
 			if ($(this).hasClass('active')) {
 				$(this).removeClass('active');
 			} else {
-				$(this).closest('.acc').find('.acc__title.active').removeClass('active');
+				$(this).closest('.acc').find('.acc-title.active').removeClass('active');
 				$(this).addClass('active');
 			}
 

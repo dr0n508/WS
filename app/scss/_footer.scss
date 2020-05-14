@@ -63,11 +63,14 @@
     }
   }
   @media only screen and (max-width: 768px) {
-    .footer-nav li {
-      width: 100%;
-      text-align: center;
-      a {
-        border-right: none;
+    .footer-nav {
+      margin-right: 0;
+      li {
+        width: 100%;
+        text-align: center;
+        a {
+          border-right: none;
+        }
       }
     }
   }
