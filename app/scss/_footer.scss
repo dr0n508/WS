@@ -9,9 +9,12 @@
   }
   .footer-nav {
     margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     li {
-      display: inline-block;
-      float: left;
+      //display: inline-block;
+      //float: left;
       a {
         text-decoration: none;
         color: white;
@@ -27,12 +30,18 @@
       }
     }
   }
+  .copyright-year {
+    color: white;
+    margin-bottom: 0;
+  }
   .copyright-brand {
     flex-grow: 1;
     text-align: right;
+    color: white;
+    margin-bottom: 0;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     font-size: 13px;
     .container {
       flex-direction: column;
@@ -50,6 +59,15 @@
             }
           }
         }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .footer-nav li {
+      width: 100%;
+      text-align: center;
+      a {
+        border-right: none;
       }
     }
   }
