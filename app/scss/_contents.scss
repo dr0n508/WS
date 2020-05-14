@@ -127,6 +127,16 @@
       margin-top: 0;
     }
   }
+  .wrapper-aside-mobile {
+    display: none;
+    background-color: $bg;
+    .widget {
+      margin-bottom: 0;
+    }
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+  }
 }
 
 //giving-back-section
@@ -342,6 +352,9 @@
 ////////////////////////trivita-clinic-section
 
 .trivata-clinic-page {
+  h1 {
+    font-size: 36px;
+  }
   @media only screen and (max-width: 768px) {
     background-color: $bg;
     .aside {
@@ -371,7 +384,29 @@
 ////////////////////////single-blog-page
 .single-blog-page {
   background: $bg;
+  .wrapper-article {
+    .title-article {
+      font-size: 36px;
+    }
+    .image-article {
+      margin-bottom: 20px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .aside {
+      background-color: white;
+      .widget {
+        margin-bottom: 0;
+      }
+    }
+    article {
+      margin-bottom: 50px;
+    }
+  }
 }
+
 .footer-article {
   padding: 20px 0;
   display: flex;
@@ -381,11 +416,14 @@
   .share-nav {
     display: flex;
     align-items: center;
-    p {
+    .label-share {
       font-size: 14px;
       font-weight: 500;
       margin-right: 20px;
       margin-bottom: 0;
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
     }
     ul {
       display: flex;
@@ -453,6 +491,31 @@
     background-image: url("../img/contact-us-hero-bg.jpg");
     @media only screen and (max-width: 450px) {
       background-image: url("../img/contact-us-hero-bg-mobile.jpg");
+    }
+  }
+  .contact-us-section {
+    padding: 50px 0;
+    .contact-content {
+      padding-bottom: 40px;
+      h2 {
+        font-size: 36px;
+      }
+      h3 {
+        font-size: 25px;
+      }
+      p {
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          color: $text;
+        }
+      }
+      time {
+        margin-bottom: 20px;
+        p {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

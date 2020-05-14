@@ -1,42 +1,9 @@
-//aside
-
-
-////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns
-////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns
-@media only screen and (max-width: 768px) {
-  .single-blog-page {
-    .aside {
-      background-color: white;
-      padding-top: 50px;
-      padding-bottom: 15px;
-    }
-    article {
-      //max-width: 540px;
-      //margin-right: auto;
-      //margin-left: auto;
-      margin-bottom: 50px;
-    }
-    .widget {
-      //max-width: 540px;
-      //margin-right: auto;
-      //margin-left: auto;
-    }
-  }
-
-}
-
-
-////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns////fix column
-
 //widget
 .widget {
   padding: 35px;
   margin-bottom: 30px;
   background-color: white;
   box-shadow: $shadow;
-  &:last-child {
-    //margin-bottom: 0;
-  }
   @media only screen and (max-width: 992px) {
     padding: 35px 25px;
   }
@@ -71,7 +38,6 @@
   @media only screen and (max-width: 768px) {
     padding-left: 0;
     padding-right: 0;
-    //padding-top: 0;
     .widget-title {
       margin-right: 40px;
       margin-left: 40px;
