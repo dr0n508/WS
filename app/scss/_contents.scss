@@ -247,6 +247,9 @@
     padding: 15px 20px;
     background-color: white;
     @extend.animate;
+    p {
+      margin-bottom: 0;
+    }
   }
   .detail-block {
     display: flex;
@@ -312,6 +315,13 @@
 .trivata-clinic-page {
   @media only screen and (max-width: 768px) {
     background-color: $bg;
+    .aside {
+      background: white;
+      .widget {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
   }
 }
 
@@ -323,6 +333,9 @@
   img {
     width: 100%;
     height: auto;
+  }
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 0;
   }
 }
 
