@@ -35,22 +35,6 @@ body {
 	transition: all 0.2s ease;
 }
 
-.accent-bg {
-	background-color: $accent;
-	.read-more-btn {
-		color: white;
-		&:after {
-			border-color: transparent transparent transparent white;
-		}
-	}
-}
-
-.hide-mobile {
-	@media only screen and (max-width: 768px) {
-		display: none;
-	}
-}
-
 @import "lib/grid"; //grid bootstrap4
 
 @import "../js/slick/slick.css";
