@@ -17,7 +17,8 @@
     background: #1C1C1C;
   }
 }
-.btn.wide {
+.btn-wide {
+  @extend .btn;
   width: 100%;
 }
 

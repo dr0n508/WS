@@ -1,20 +1,19 @@
 .acc {
   margin-bottom: 20px;
-  .acc__card {
+  .acc-card {
     border-top: solid 2px #88C4C5;
     &:last-child {
       border-bottom: solid 2px #88C4C5;
     }
   }
-  .acc__title {
+  .acc-title {
+    position: relative;
     display: block;
     padding: 16px 10px;
+    text-align: left;
     font-size: 18px;
     font-weight: 500;
-
     cursor: pointer;
-    position: relative;
-    text-align: left;
     &::after {
       content: "";
       position: absolute;
@@ -34,33 +33,13 @@
       transition: all 0.2s ease-in-out;
     }
   }
-  .acc__panel {
+  .acc-panel {
     display: none;
     margin: 0;
     padding: 0 10px 10px 20px;
     text-align: left;
     p:last-child {
       margin-bottom: 0;
-    }
-  }
-  .question {
-    font-weight: 500;
-    margin-bottom: 0;
-  }
-  .answer {
-
-  }
-  .review-faq-list {
-    li {
-      margin-bottom: 10px;
-    }
-    .review-faq-text {
-      font-family: $playfair;
-      font-style: italic;
-      margin-bottom: 5px;
-    }
-    .review-faq-text-author {
-      font-size: 14px;
     }
   }
 }

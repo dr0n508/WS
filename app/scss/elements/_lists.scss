@@ -1,22 +1,18 @@
 .list {
-  //list-style: circle;
-
   li {
     line-height: 40px;
     position: relative;
     padding-left: 25px;
     &:before {
+      content: "";
       position: absolute;
+      display: inline-block;
       left: 0;
       top: 50%;
       margin-top: -1px;
-      content: "";
-      display: inline-block;
       width: 14px;
       height: 2px;
       background-color: $accent;
     }
   }
-
-
 }

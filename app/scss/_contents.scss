@@ -16,16 +16,17 @@
 
 //////////////////////home-page//////////////////////
 
+
 //hero section
 .hero-section {
   padding: 440px 0 0;
   background: url("../img/hero-img.jpg") no-repeat 50% 50%;
   background-size: cover;
   h1 {
+    display: inline-block;
+    padding: 20px 100px 20px 15%;
     color: white;
     background: rgba(1,1,1,.5);
-    padding: 20px 100px 20px 15%;
-    display: inline-block;
     span {
       font-family: $playfair;
       font-style: italic;
@@ -37,9 +38,9 @@
   }
   @media only screen and (max-width: 768px) {
     h1 {
+      padding: 20px 40px;
       width: 100%;
       font-size: 36px;
-      padding: 20px 40px;
       span {
         display: block;
       }
@@ -65,14 +66,11 @@
 .articles-section {
   background-color: white;
   padding: 50px 0;
-  h2 {
-    margin-bottom: 50px;
-  }
   .article-item {
-    margin-bottom: 50px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
     .image-article {
       width: 40%;
       .image-container {
@@ -127,13 +125,12 @@
     }
     @media only screen and (max-width: 768px) {
       margin-top: 0;
-      margin-bottom: 0;
     }
   }
 }
 
-//giving-back
-.giving-back {
+//giving-back-section
+.giving-back-section {
   background: $bg;
   padding: 50px 0;
 }
@@ -193,8 +190,8 @@
   }
 }
 
-///////////////product cart///////////////
-.product-cart {
+//product card
+.product-characteristics {
   padding: 0 0 50px;
   h1 {
     font-size: 36px;
@@ -209,10 +206,7 @@
     line-height: 30px;
     font-weight: 500;
   }
-  p {
-    margin-bottom: 20px;
-  }
-  .wrapper-card {
+  .product-actions {
     background-color: white;
     margin-bottom: 20px;
     .block-text {
@@ -243,16 +237,35 @@
       }
     }
   }
-  .wrap-product-info {
+  .product-info {
     margin-bottom: 20px;
   }
   .video {
     margin-bottom: 20px;
   }
+  .product-accordion {
+    .question {
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    .review-faq-list {
+      li {
+        margin-bottom: 10px;
+      }
+      .review-faq-text {
+        font-family: $playfair;
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+      .review-faq-text-author {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
-
-.product-item {
+//lists-products
+.product-card {
   margin-bottom: 20px;
   .wrap-product {
     @extend.animate;
@@ -278,7 +291,7 @@
   }
 }
 
-.product-item.top-product {
+.product-card.top-product {
   &:hover {
     .block-text {
       background-color: $accent;
@@ -288,7 +301,7 @@
         transform: translate(-50%, -50%) scale(1.03);
       }
     }
-    h3, p {
+    .product-name, p {
       color: white;
       &:after {
         background: white;
@@ -298,7 +311,7 @@
 }
 
 
-//blog-page
+////////////////////////blog-page//////////////////////
 .blog-page {
   background: $bg;
   .header-page {
@@ -326,7 +339,7 @@
   }
 }
 
-//trivita-clinic-section
+////////////////////////trivita-clinic-section
 
 .trivata-clinic-page {
   @media only screen and (max-width: 768px) {
@@ -355,7 +368,7 @@
   }
 }
 
-//single-blog-page
+////////////////////////single-blog-page
 .single-blog-page {
   background: $bg;
 }
@@ -433,7 +446,7 @@
 }
 
 
-//contact-us-page
+////////////////////////contact-us-page
 .contact-us-page {
   background-color: $bg;
   .header-page {
@@ -442,7 +455,6 @@
       background-image: url("../img/contact-us-hero-bg-mobile.jpg");
     }
   }
-
 }
 
 
