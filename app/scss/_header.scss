@@ -240,8 +240,11 @@
   }
   .nav_item {
     width: 100%;
-    padding: 15px 0;
     text-align: center;
+    a {
+      padding: 15px 0;
+      display: inline-block;
+    }
   }
   .nav {
     flex-direction: column;

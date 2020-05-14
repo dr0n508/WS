@@ -1,4 +1,6 @@
-//////////////////////hero section
+//////////////////////home-page//////////////////////
+
+//hero section
 .hero-section {
   padding: 440px 0 0;
   background: url("../img/hero-img.jpg") no-repeat 50% 50%;
@@ -29,12 +31,12 @@
   }
 }
 
-////////////////////////intro-section
+//intro-section
 .intro-section {
   padding: 50px 0;
 }
 
-////////////////////////top-products-section
+//top-products-section
 .top-products-section {
   padding: 50px 0;
   background-color: $bg;
@@ -43,8 +45,7 @@
   }
 }
 
-
-//////////////////////articles-section
+//articles-section
 .articles-section {
   background-color: white;
   padding: 50px 0;
@@ -93,15 +94,35 @@
   }
 }
 
-////////////////////////giving-back
+//aside-home-page
+.home-page {
+  .aside {
+    margin-top: -300px;
+    margin-bottom: -100px;
+    @media only screen and (max-width: 992px) {
+      margin-top: -150px;
+      margin-bottom: 0;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+//giving-back
 .giving-back {
   background: $bg;
   padding: 50px 0;
 }
 
-////////////////////////page our products
+//////////////////////page our products//////////////////////
 .product-list {
   margin-bottom: 30px;
+  div[class^="col"] {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 .products-page {

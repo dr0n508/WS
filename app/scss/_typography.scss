@@ -26,6 +26,9 @@ p {
   color: $text;
 }
 
+.bold {
+  font-weight: 500;
+}
 
 
 ///
@@ -91,7 +94,7 @@ h3 {
   }
 }
 
-time.datetime {
+.date-post {
   display: inline-block;
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -99,8 +102,9 @@ time.datetime {
   letter-spacing: 0.18em;
   margin-bottom: 20px;
   span {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 14px;
+    letter-spacing: normal;
   }
 }
 

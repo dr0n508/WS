@@ -1,18 +1,32 @@
 //aside
-.home-page {
-  .aside {
-    margin-top: -300px;
-    margin-bottom: -100px;
-    @media only screen and (max-width: 992px) {
-      margin-top: -100px;
-      margin-bottom: 0;
+
+
+////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns
+////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns
+@media only screen and (max-width: 768px) {
+  .single-blog-page {
+    .aside {
+      background-color: white;
+      padding-top: 50px;
+      padding-bottom: 15px;
     }
-    @media only screen and (max-width: 768px) {
-      margin-top: 0;
-      margin-bottom: 0;
+    article {
+      //max-width: 540px;
+      //margin-right: auto;
+      //margin-left: auto;
+      margin-bottom: 50px;
+    }
+    .widget {
+      //max-width: 540px;
+      //margin-right: auto;
+      //margin-left: auto;
     }
   }
+
 }
+
+
+////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns////fix columns////fix column
 
 //widget
 .widget {
@@ -21,7 +35,7 @@
   background-color: white;
   box-shadow: $shadow;
   &:last-child {
-    margin-bottom: 0;
+    //margin-bottom: 0;
   }
   @media only screen and (max-width: 992px) {
     padding: 35px 25px;
@@ -31,18 +45,29 @@
     line-height: 30px;
     color: $text;
   }
-  article {
-    margin-bottom: 20px;
-  }
   article.border-above {
     padding-top: 10px;
   }
   .widget-image {
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
+  }
+  .widget-video {
+    margin-bottom: 20px;
+  }
+  .read-more-btn {
+    margin-bottom: 20px;
+  }
+  article:last-child {
+    p, .widget-image, .widget-video, .read-more-btn {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
-.widget.wrap-slider-w-mobile {
+.widget.wrap-slider-mobile {
   @media only screen and (max-width: 768px) {
     padding-left: 0;
     padding-right: 0;
@@ -56,7 +81,6 @@
 
 .widget.no-shadow-mobile {
   @media only screen and (max-width: 768px) {
-
     box-shadow: none;
   }
 }
