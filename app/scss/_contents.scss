@@ -529,10 +529,17 @@
     padding: 40px 0;
     .inner-wrapper {
       max-width: 100%;
-      .title-page {
-        font-size: 25px;
+      form {
+        padding-right: 0;
+        padding-left: 0;
       }
     }
+  }
+}
+
+.giving-back-page {
+  .header-page {
+
   }
 }
 
