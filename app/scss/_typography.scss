@@ -38,6 +38,18 @@ p {
   font-size: 14px;
 }
 
+.margin-b-none {
+  margin-bottom: 0;
+}
+
+.contact-link {
+  display: block;
+  color: $text;
+  text-decoration: none;
+  text-underline: none;
+  margin-bottom: 20px;
+}
+
 .border-above {
   position: relative;
   &:before {

@@ -34,25 +34,22 @@
     }
   }
 }
-.widget.wrap-slider-mobile {
-  @media only screen and (max-width: 768px) {
-    padding-left: 0;
-    padding-right: 0;
+
+/////widget mobile///
+@media only screen and (max-width: 768px) {
+  .widget.no-bg-mobile {
+    background: none;
+  }
+  .widget.widget-mobile {
+    box-shadow: none;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
     .widget-title {
       margin-right: 40px;
       margin-left: 40px;
     }
-  }
-}
-
-.widget.no-shadow-mobile {
-  @media only screen and (max-width: 768px) {
-    box-shadow: none;
-  }
-}
-
-.widget.no-bg-mobile {
-  @media only screen and (max-width: 768px) {
-    background: none;
   }
 }

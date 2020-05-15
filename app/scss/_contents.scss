@@ -8,7 +8,7 @@
 .trivata-clinic-page,
 .giving-back-page,
 .privacy-policy-page,
-.terms-of-us-page {
+.terms-of-use-page {
   background-color: $bg;
 }
 
@@ -141,7 +141,7 @@
     display: none;
     background-color: $bg;
     .widget {
-      margin-bottom: 0;
+      //margin-bottom: 0;
     }
     @media only screen and (max-width: 768px) {
       display: block;
@@ -344,7 +344,6 @@
 ////////////////////////trivita-clinic-section
 .trivata-clinic-page {
   .trivita-clinic-section {
-    padding: 60px 0;
     .title-page {
       font-size: 36px;
     }
@@ -354,14 +353,6 @@
     .image-page {
       width: 100%;
       height: auto;
-    }
-    @media only screen and (max-width: 768px) {
-      padding-bottom: 0;
-    }
-  }
-  @media only screen and (max-width: 768px) {
-    .aside {
-      background: white;
     }
   }
 }
@@ -377,14 +368,6 @@
       margin-bottom: 20px;
       width: 100%;
       height: auto;
-    }
-  }
-  @media only screen and (max-width: 768px) {
-    .aside {
-      background-color: white;
-      .widget {
-        margin-bottom: 0;
-      }
     }
   }
 }
@@ -471,21 +454,15 @@
     }
   }
   .contact-us-section {
-    padding: 50px 0;
     .contact-content {
-      padding-bottom: 40px;
       h2 {
         font-size: 36px;
       }
       h3 {
         font-size: 25px;
       }
-      p {
-        a {
-          text-decoration: none;
-          font-weight: 500;
-          color: $text;
-        }
+      .contact-link {
+        font-weight: 500;
       }
       time {
         display: inline-block;
@@ -494,14 +471,6 @@
           margin-bottom: 0;
         }
       }
-    }
-  }
-  @media only screen and (max-width: 768px) {
-    .aside {
-      background: white;
-    }
-    .contact-us-section {
-      padding-bottom: 0;
     }
   }
 }
@@ -537,11 +506,31 @@
   }
 }
 
-.giving-back-page {
-  .header-page {
-
+.terms-of-use-page,
+.privacy-policy-page,
+.contact-us-section,
+.giving-back-page,
+.trivata-clinic-page {
+  padding: 50px 0;
+  .terms-of-use-section {
+    h2 {
+      font-weight: 500;
+      font-size: 16px;
+    }
+    address {
+      margin-bottom: 20px;
+      font-style: normal;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 0;
   }
 }
+
+
 
 
 
