@@ -37,6 +37,32 @@
 	});
 
 //sliders
+
+$('.js-articles-image-slider').slick({
+	dots: true,
+	infinite: true,
+	speed: 300,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: true,
+	responsive: [
+		{
+			breakpoint: 9999,
+			settings: "unslick"
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true
+			}
+		}
+	]
+});
+
+
 	$('.js-article-slider, .js-last-updates-slider').slick({
 		dots: true,
 		infinite: true,
@@ -51,6 +77,15 @@
 			},
 			{
 				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 576,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
