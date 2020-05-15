@@ -20,4 +20,7 @@
   a:hover {
     color: $accent;
   }
+  @media only screen and (max-width: 450px) {
+    a, span { font-size: 14px; }
+  }
 }
