@@ -1,18 +1,4 @@
 //base pages styles
-.home-page,
-.products-page,
-.single-product-page,
-.blog-page,
-.single-blog-page,
-.contact-us-page,
-.gift-card-page,
-.trivata-clinic-page,
-.giving-back-page,
-.privacy-policy-page,
-.terms-of-use-page {
-  background-color: $bg;
-}
-
 .trivata-clinic-page,
 .contact-us-page,
 .giving-back-page,
@@ -38,28 +24,6 @@
   @media only screen and (max-width: 450px) {
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-}
-
-.image-page {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.accent-bg {
-  background-color: $accent;
-  .read-more-btn {
-    color: white;
-    &:after {
-      border-color: transparent transparent transparent white;
-    }
-  }
-}
-
-.hide-mobile {
-  @media only screen and (max-width: 768px) {
-    display: none;
   }
 }
 
@@ -193,9 +157,6 @@
   @media only screen and (max-width: 768px) {
     .header-page {
       background-image: url("../img/our-products/our-product-header-bg-mobile.jpg");
-    }
-    .product-section {
-      //padding: 20px 0;
     }
   }
 }
