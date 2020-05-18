@@ -12,6 +12,38 @@
   background-color: $bg;
 }
 
+//base page styles
+.trivata-clinic-page, .contact-us-page, .giving-back-page, .privacy-policy-page, .terms-of-use-page {
+  aside.aside {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.trivita-clinic-section,
+.contact-us-section,
+.giving-back-section,
+.privacy-policy-section,
+.terms-of-use-section
+ {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.terms-of-use-section {
+  h2 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  address {
+    margin-bottom: 20px;
+    font-style: normal;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .accent-bg {
   background-color: $accent;
   .read-more-btn {
@@ -144,12 +176,6 @@
       display: block;
     }
   }
-}
-
-//giving-back-section
-.giving-back-section {
-  background: $bg;
-  padding: 50px 0;
 }
 
 //////////////////////page our products//////////////////////
@@ -451,22 +477,20 @@
     }
   }
   .contact-us-section {
-    .contact-content {
-      h2 {
-        font-size: 36px;
-      }
-      h3 {
-        font-size: 25px;
-      }
-      .contact-link {
-        font-weight: 500;
-      }
-      time {
-        display: inline-block;
-        margin-bottom: 20px;
-        p {
-          margin-bottom: 0;
-        }
+    h2 {
+      font-size: 36px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    .contact-link {
+      font-weight: 500;
+    }
+    time {
+      display: inline-block;
+      margin-bottom: 20px;
+      p {
+        margin-bottom: 0;
       }
     }
   }
@@ -503,29 +527,9 @@
   }
 }
 
-.terms-of-use-page,
-.privacy-policy-page,
-.contact-us-section,
-.giving-back-page,
-.trivata-clinic-page {
-  padding: 50px 0;
-  .terms-of-use-section {
-    h2 {
-      font-weight: 500;
-      font-size: 16px;
-    }
-    address {
-      margin-bottom: 20px;
-      font-style: normal;
-      p {
-        margin-bottom: 0;
-      }
-    }
-  }
-  @media only screen and (max-width: 768px) {
-    padding-bottom: 0;
-  }
-}
+
+
+
 
 
 
