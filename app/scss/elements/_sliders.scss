@@ -13,14 +13,14 @@
   }
 }
 
-
-
-
 .slick-next {
   right: 0;
   &:before {
     border-width: 15px 0 15px 16px;
     border-color: transparent transparent transparent #C4C4C4;
+  }
+  &:hover:before {
+    border-color: transparent transparent transparent $accent;
   }
 }
 
@@ -29,6 +29,9 @@
   &:before {
     border-width: 15px 16px 15px 0;
     border-color: transparent #C4C4C4 transparent transparent;
+  }
+  &:hover:before {
+    border-color: transparent $accent transparent transparent;
   }
 }
 
@@ -61,7 +64,6 @@
   }
 }
 
-
 .slick-slide {
   @media only screen and (max-width: 768px) {
     margin-right: 10px;
@@ -71,5 +73,4 @@
     margin-right: 0;
     margin-left: 0;
   }
-
 }
