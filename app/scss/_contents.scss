@@ -1,4 +1,4 @@
-//base page styles
+//base pages styles
 .home-page,
 .products-page,
 .single-product-page,
@@ -107,7 +107,6 @@
 .articles-section {
   padding: 50px 0;
   background-color: white;
-
   .article-item {
     display: flex;
     align-items: center;
@@ -243,13 +242,10 @@
 }
 
 //////////////////////single product page//////////////////////
-//product card
 .product-characteristics {
   padding: 0 0 50px;
   .product-title {
-    font-size: 36px;
-    line-height: 44px;
-    margin-bottom: 20px;
+    @extend h1;
   }
   .stars-block {
     padding-bottom: 30px;
@@ -290,11 +286,6 @@
   }
   .product-info {
     margin-bottom: 20px;
-    h3 {
-      font-size: 25px;
-      line-height: 30px;
-      font-weight: 500;
-    }
   }
   .video {
     margin-bottom: 20px;
@@ -395,7 +386,6 @@
     }
   }
 }
-
 
 //gift-card-page
 .gift-card-section {
