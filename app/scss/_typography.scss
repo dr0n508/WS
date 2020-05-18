@@ -1,33 +1,37 @@
-h1 {
-  font-size: 45px;
-  line-height: 1.2;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 25px;
-  line-height: 1.2;
-  font-weight: 500;
-  color: $text;
+h1, h2, .widget-title, .like-h2, .like-bold, h3, p {
   margin-bottom: 20px;
+  color: $text;
 }
 
-h2.header-section {
-  margin-bottom: 50px;
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.like-h1 {
+  @extend h1;
+}
+
+h2, .widget-title {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.like-h2 {
+ @extend h2;
+}
+
+.like-bold {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 18px;
-  line-height: 22px;
   font-weight: 500;
-  color: $text;
-  margin-bottom: 20px;
-
-}
-
-p {
-  margin-bottom: 20px;
-  color: $text;
+  line-height: 22px;
 }
 
 .bold {
@@ -91,6 +95,22 @@ p {
     font-weight: 800;
     font-size: 14px;
     letter-spacing: normal;
+  }
+}
+
+time {
+  display: inline-block;
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  p {
+    margin-bottom: 0;
   }
 }
 

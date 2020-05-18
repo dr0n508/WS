@@ -1,3 +1,4 @@
+//base page styles
 .home-page,
 .products-page,
 .single-product-page,
@@ -12,11 +13,17 @@
   background-color: $bg;
 }
 
-//base page styles
-.trivata-clinic-page, .contact-us-page, .giving-back-page, .privacy-policy-page, .terms-of-use-page {
+.trivata-clinic-page,
+.contact-us-page,
+.giving-back-page,
+.privacy-policy-page,
+.terms-of-use-page {
   aside.aside {
     padding-top: 50px;
     padding-bottom: 50px;
+    @media only screen and (max-width: 768px) {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -24,24 +31,15 @@
 .contact-us-section,
 .giving-back-section,
 .privacy-policy-section,
-.terms-of-use-section
- {
+.terms-of-use-section {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.terms-of-use-section {
-  h2 {
-    font-weight: 500;
-    font-size: 16px;
-  }
-  address {
-    margin-bottom: 20px;
-    font-style: normal;
-    p {
-      margin-bottom: 0;
-    }
-  }
+.image-page {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .accent-bg {
@@ -71,6 +69,8 @@
     padding: 20px 100px 20px 15%;
     color: white;
     background: rgba(1,1,1,.5);
+    margin-bottom: 0;
+    font-size: 45px;
     span {
       font-family: $playfair;
       font-style: italic;
@@ -364,22 +364,6 @@
   }
 }
 
-////////////////////////trivita-clinic-section
-.trivata-clinic-page {
-  .trivita-clinic-section {
-    .title-page {
-      font-size: 36px;
-    }
-    .image-page, .title-page, .list, .btn {
-      margin-bottom: 20px;
-    }
-    .image-page {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-
 ////////////////////////single-blog-page
 .single-blog-page {
   .article-wrapper {
@@ -400,72 +384,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  .share-nav {
-    display: flex;
-    align-items: center;
-    .label-share {
-      font-size: 14px;
-      font-weight: 500;
-      margin-right: 20px;
-      margin-bottom: 0;
-      @media only screen and (max-width: 768px) {
-        display: none;
-      }
-    }
-    ul {
-      display: flex;
-      align-items: center;
-    }
-    li {
-      &:last-child {
-        a {
-          margin-right: 0;
-        }
-      }
-    }
-    .share-fb a, .share-twitter a, .share-in a {
-      display: block;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      position: relative;
-      margin-right: 10px;
-      &:hover {
-        background-color: $accent;
-      }
-      &:before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        width: 16px;
-        height: 16px;
-        display: block;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    }
-    .share-fb a {
-      background-color: #3e5598;
-      &:before {
-        background-image: url("../img/social-icon/share-icons/fb-white.png");
-      }
-    }
-    .share-twitter a{
-      background-color: #5fa9ee;
-      &:before {
-        background-image: url("../img/social-icon/share-icons/twitter-white.png");
-      }
-    }
-    .share-in a {
-      background-color: #2074b6;
-      &:before {
-        background-image: url("../img/social-icon/share-icons/in-white.png");
-      }
-    }
-  }
 }
 
 ////////////////////////contact-us-page
@@ -476,24 +394,6 @@
       background-image: url("../img/contact-us-hero-bg-mobile.jpg");
     }
   }
-  .contact-us-section {
-    h2 {
-      font-size: 36px;
-    }
-    h3 {
-      font-size: 25px;
-    }
-    .contact-link {
-      font-weight: 500;
-    }
-    time {
-      display: inline-block;
-      margin-bottom: 20px;
-      p {
-        margin-bottom: 0;
-      }
-    }
-  }
 }
 
 
@@ -501,12 +401,9 @@
 .gift-card-section {
   padding: 70px 0;
   .inner-wrapper {
-    max-width: 450px;
+    max-width: 420px;
     margin-right: auto;
     margin-left: auto;
-    .title-page {
-      font-size: 36px;
-    }
     form {
       padding-right: 20px;
       padding-left: 20px;
@@ -526,13 +423,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-

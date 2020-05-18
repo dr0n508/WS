@@ -93,16 +93,16 @@
       width: 57px;
       height: 57px;
     }
-    h1 {
+    p {
+      margin-bottom: 0;
       padding: 0 20px;
-
       font-size: 16px;
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: 2px;
       line-height: 1;
-
       color: #393C5B;
+
     }
   }
 }
@@ -262,7 +262,7 @@
 
 
 @media (max-width: 374px) {
-  .header .logo h1 {
+  .header .logo p {
     font-size: 14px;
     padding: 0 14px;
   }

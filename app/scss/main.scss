@@ -53,9 +53,10 @@ body {
 @import "elements/stars";
 @import "elements/btns";
 @import "elements/lists";
+@import "elements/share-nav";
 
 @import "_header.scss";
-@import "_aside.scss";
+@import "_widget";
 @import "_contents.scss";
 @import "_footer.scss";
 
