@@ -78,13 +78,15 @@
       position: relative;
     }
     .close-modal {
+      padding-right: 10px;
+      padding-left: 10px;
       position: absolute;
-      right: 10px;
+      right: 0;
       top: 0;
       color: $text;
       cursor: pointer;
       font-size: 25px;
-
+      line-height: 1.2;
     }
   }
 }
