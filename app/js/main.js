@@ -3,16 +3,12 @@
 		$(this).toggleClass('active');
 		$('body').toggleClass('no_scroll');
 		$('.menu_content').toggleClass('active');
-		// $('.sub_menu').slideUp(300);
 	});
 	$(document).on('click', function(e) {
 		if (!$(e.target).closest('.menu_wrap').length) {
 			$('.burger').removeClass('active');
 			$('.menu_content').removeClass('active');
 			$('body').removeClass('no_scroll');
-			if ($(window).width() <= 767) {
-				// $('.sub_menu').slideUp(300);
-			}
 		}
 		e.stopPropagation();
 	});
