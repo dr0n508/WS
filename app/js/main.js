@@ -33,7 +33,7 @@
 	});
 
 //sliders
-$('.js-articles-image-slider').slick({
+$('.js-slider-1-columns').slick({
 	dots: true,
 	infinite: true,
 	speed: 300,
@@ -57,7 +57,7 @@ $('.js-articles-image-slider').slick({
 	]
 });
 
-$('.js-article-slider, .js-last-updates-slider').slick({
+$('.js-slider-1-2-columns').slick({
 	dots: true,
 	infinite: true,
 	speed: 300,
